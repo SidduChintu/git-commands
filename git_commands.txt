@@ -1,0 +1,63 @@
+git init : initializes the repo
+
+git add "file name (or) ." : adds the files to staging stage
+
+git commit -m "commit message": commits the files present in the folder
+
+git config : configures the user name and email to know who added the files in the repository
+	git config global user.name "abcdef"
+	git config global user.email "abcdef@gmail.com"
+	git config user.name "abcdef"
+	git config user.mail "abcdef@gmail.com"
+
+git status : lets us know whether there are any files to commit or not
+
+git branch : lists the branches
+
+git branch <branch name> : creates the branch
+
+git branch -r : to see remote branches
+
+git branch -m <new brnach name> : renames the branch in which we are present
+
+git branch -a  to see all remote branches
+
+git checkout <branch name> : switches the branch
+
+git checkout -b <branch name> : creates the branch and switches to it automatically"
+
+git merge <branch name> : merges the branch which we want with the branch which we are in.
+
+git branch -d <branch name> : deletes the branch in local repository
+
+git push origin -delete <branch name> : deletes the remote branch
+
+git remote add origin <ssh link> : connects to remote repository
+
+git remote add origin <branch name> <ssh link>
+
+git clone <ssh link>: creates a local repository and stores the files from remote repository to local repoaitory
+
+git pull origin <branch name> : makes the changes in local repository which are made in remote repository
+
+git push origin <branch name> : pushes the files into remote repository
+
+git stash -u : made changes when they are not in a state to commit 
+
+git stash list
+
+git stash show
+
+git stash apply
+
+git log : shows us the logs of the commit which was made recently
+
+git log <--author=author name (or) --before=date>
+
+git log --oneline : shows us the last commit
+
+git revert <commit id> : reverts the last commit
+
+git revert HEAD : reverts to last commit
+
+git rebase <branch name>  : takes a set of commits, copies them and stores them outside your repository
